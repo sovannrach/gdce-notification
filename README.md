@@ -14,12 +14,12 @@ cd laravel_project_path
 composer require sovannrach/notification
 ```
 
-Open .env file and add code
+If you want to config with your notification server, Open .env file and add code
 
 ```sh
-NOTIFICATION_URL=http://10.0.8.59:93
-NOTIFICATION_CLIENT_ID=2
-NOTIFICATION_SECRET_KEY=dl2wHbINSwSGHiugxYCb8UQ6HYVAk7O5i5iPlYxb
+NOTIFICATION_URL=xxxx
+NOTIFICATION_CLIENT_ID=x
+NOTIFICATION_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ NOTIFICATION_SECRET_KEY=dl2wHbINSwSGHiugxYCb8UQ6HYVAk7O5i5iPlYxb
 
 use Sovannrach\Notification\Http\Libraries\SendMail;
 
-Route::get('/send-mail', function () {
+public function sendMail () {
     
     $data = [
         'subject' => 'Disable Broker Card',
