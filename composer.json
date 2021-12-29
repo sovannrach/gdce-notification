@@ -1,0 +1,26 @@
+{
+    "name": "sovannrach/notification",
+    "description": "Send notification via api server",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sovannrach",
+            "email": "sovannrach@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sovannrach\\Notification\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sovannrach\\Notification\\NotificationServiceProvider"
+            ]
+        }
+    }
+}
