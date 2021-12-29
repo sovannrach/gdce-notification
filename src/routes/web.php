@@ -1,5 +1,17 @@
 <?php
 
-use Sovannrach\Profile\Http\Controllers\ProfileController;
+use Sovannrach\Notification\Http\Libraries\SendMail;
 
-Route::get('profile',[ProfileController::class,'index']);
+
+Route::get('/send-mail', function () {
+    
+    $data = [
+        'subject' => 'Disable Broker Card',
+        'title' => 'Mail Title...',
+        'body' => 'Mail body content...',
+        'to' => 'sovannrach@gmail.com'
+    ];
+
+    return SendMail::send($data);
+
+});
