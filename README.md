@@ -11,7 +11,7 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 Update your composer to v2 : https://newbedev.com/shell-update-composer-2-ubuntu-code-example
 cd laravel_project_path
-composer requre...
+composer require sovannrach/notification
 ```
 
 Open .env file and add code
