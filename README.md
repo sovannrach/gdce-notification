@@ -25,6 +25,9 @@ NOTIFICATION_SECRET_KEY=dl2wHbINSwSGHiugxYCb8UQ6HYVAk7O5i5iPlYxb
 ## Usage
 
 ```sh
+
+use Sovannrach\Notification\Http\Libraries\SendMail;
+
 Route::get('/send-mail', function () {
     
     $data = [
